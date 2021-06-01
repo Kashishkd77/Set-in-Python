@@ -1,5 +1,5 @@
-# SET Functions illustration :
-
+# SET METHODS illustration :
+print("SET METHODS illustration :")
 set1={1,2,34,67,89,23,1,99}
 my_set1={1,4,9,0,65,78,8,4,4,5,7,8}
 my_set2={1,2,3,7,9,0,7,45,6}
@@ -101,4 +101,50 @@ set1.clear()
 print("Deleting all elements using clear() : ",set1)
 print()
 
+# SET BUILT-IN FUNCTIONS illustration :
+print("SET BUILT-IN FUNCTIONS illustration :")
+set1={1,2,34,67,89,23,1,99,0}
+my_set1={1,4,9,0,65,78,8,4,4,5,7,8}
+my_set2={1,2,3,7,9,0,7,45,6}
+
+# all() : Returns True if all elements of the set are true (or if the set is empty).
+print("1. all() function : ")
+print("Using all() in my_set1 is  : ",all(my_set1))    #False since my_set1 has 0
+print()
+
+# any() : Returns True if any element of the set is true. If the set is empty, returns False.
+print("2. any() function : ")
+print("Using any() in my_set1 is  : ",any(my_set1))     #True since my_set1 has at least one value True
+print()
+
+# enumerate() : Returns an enumerate object. It contains the index and value for all the items of the set as a pair.
+print("3. enumerate() function : ")
+enumerate_set=enumerate(my_set1)
+print("Enumerating in my_set1 is  : ",set(enumerate_set))
+print()
+
+# len() : Returns the length (the number of items) in the set.
+print("4. len() function : ")
+print("Length of set1 is  : ",len(set1))
+print()
+
+# max() : Returns the largest item in the set.
+print("5. max() function : ")
+print("Largest item in set1 is  : ",max(set1))
+print()
+
+# min() : Returns the smallest item in the set.
+print("6. min() function : ")
+print("Smallest item in set1 is  : ",min(set1))
+print()
+
+# sorted() : Returns a new sorted list from elements in the set(does not sort the set itself).
+print("7. sorted() function : ")
+print("Sorting in set1 is  : ",sorted(set1))
+print()
+
+# sum() : Returns the sum of all elements in the set.
+print("8. sum() function : ")
+print("Sum of items in set1 is  : ",sum(set1))
+print()
 
